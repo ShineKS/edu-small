@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+
+  <!-- 用户 openid -->
+  <view class="userinfo">
+    <text>我的头像</text>
+  </view>
+ <view class="userinfo">
+    <text>我的孩子</text>
+  </view>
+   <view class="userinfo">
+    <text>机构登录</text>
+  </view>
+
+</view>
