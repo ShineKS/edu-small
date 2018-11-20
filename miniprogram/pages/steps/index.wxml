@@ -1,0 +1,7 @@
+<demo-block>
+  <van-row>
+  <image src='/image/touxiang.jpeg'></image>
+    <van-col span="" custom-class="dark">2018年07月01日第一次记录</van-col>
+    <image src='/image/barcode.jpeg'></image>
+  </van-row>
+</demo-block>

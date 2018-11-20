@@ -1,0 +1,8 @@
+.dark {
+  background-color:#66c6f2;
+  font-size: 13px;
+  line-height: 70px;
+  text-align: center;
+  margin-bottom: 10px;
+  background-clip: content-box;
+}
