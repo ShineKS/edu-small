@@ -16,7 +16,7 @@
     "navigationBarTitleText": "云开发 QuickStart",
     "navigationBarTextStyle": "black"
   },
-  "debug":true,
+  "debug":false,
   "tabBar": {
     "list": [
       {

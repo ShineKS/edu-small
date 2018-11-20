@@ -1,7 +1,11 @@
 //index.js
 const app = getApp()
-
+var res=function(data){
+  console.log(111)
+  console.log(data)
+}
 Page({
+  //页面的初始化数据,和vue类似
   data: {
     avatarUrl: './user-unlogin.png',
     userInfo: {},
@@ -9,8 +13,22 @@ Page({
     takeSession: false,
     requestResult: ''
   },
-
+//页面加载时触发。一个页面只会调用一次
   onLoad: function() {
+    console.log("========")
+    wx.getUserInfo({ "withCredentials": true, "success": res,"fail":res})
+    wx.login({
+      success(res) {
+        console.log("---登录后的信息----")
+        console.log(res)
+        if (res.code) {
+          //获取登录调用的code
+        } else {
+          console.log('登录失败！' + res.errMsg)
+        }
+      }
+    })
+   
     if (!wx.cloud) {
       wx.redirectTo({
         url: '../chooseLib/chooseLib',
