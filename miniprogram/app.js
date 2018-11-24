@@ -24,3 +24,26 @@ App({
     console.log(msg)
   },
 })
+/*定义微信全局的权限请求,session为家长端的访问控制 token是机构端的访问控制
+  在登录小程序时初始化session,在机构登录时初始化token
+*/
+wx.Global = {
+  user:"",
+  header:{
+  'content-type': 'application/x-www-form-urlencoded',
+  'token': '',
+  'session':''
+  }
+}
+//用于全局发起带权限的请求
+wx.AuthPostReq=function(obj){
+  obj.header = wx.Global.header
+  obj.method="POST"
+  wx.request(obj)
+}
+//用于全局发起带权限的请求
+wx.AuthGetReq = function (obj) {
+  obj.header = wx.Global.header
+  obj.method = "GET"
+  wx.request(obj)
+}
