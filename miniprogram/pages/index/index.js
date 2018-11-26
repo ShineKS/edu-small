@@ -1,10 +1,6 @@
 //index.js
 const app = getApp()
-var res=function(data){
-  console.log(111)
-  console.log(data)
-  console.log(wx.Global.user.rawData)
-}
+
 Page({
   //页面的初始化数据,和vue类似
   data: {
@@ -19,25 +15,7 @@ Page({
     //获取用户信息之前需要引导用户授权
     console.log(wx.Global)
     wx.getUserInfo({ "withCredentials": true, "success": res,"fail":res})
-    wx.login({
-      success(res) {
-        console.log("---登录后的信息----")
-        
-        if (res.code) {
-          wx.AuthPostReq({
-            url: 'http://127.0.0.1:8080/little_edu/smallApp/wxLogin', //仅为示例，并非真实的接口地址
-            data: {
-              code: res.code,
-              rawData: wx.Global.user.rawData
-            }, 
-            success(res) {
-              console.log(res.data)
-            }})
-        } else {
-          console.log('登录失败！' + res.errMsg)
-        }
-      }
-    })
+
   
     if (!wx.cloud) {
       wx.redirectTo({

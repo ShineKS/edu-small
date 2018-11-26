@@ -1,0 +1,7 @@
+
+<view class="container">
+
+    <open-data type="groupName" open-gid="xxxxxx"></open-data>
+    <open-data type="userAvatarUrl"></open-data>
+    <button open-type="getUserInfo" bindgetuserinfo="authCallback">登录授权</button>
+</view>
