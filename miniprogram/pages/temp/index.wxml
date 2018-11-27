@@ -1,0 +1,10 @@
+<demo-section>
+  <demo-block padding>
+     <view class="row">
+      <van-button type="primary" class="demo-margin" bindtap='jumpBtn'>我的孩子</van-button>
+    </view>
+     <view class="row">
+      <van-button type="primary" class="demo-margin">机构登录</van-button>
+    </view>
+  </demo-block>
+</demo-section>

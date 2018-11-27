@@ -1,0 +1,12 @@
+/* pages/index/index.wxss */
+
+.textin{
+  padding: 5px;
+}
+.inline{
+  display: inline-block;
+  margin: 0% 16%;
+}
+.comfirm{
+  margin: 0% 40%;
+}

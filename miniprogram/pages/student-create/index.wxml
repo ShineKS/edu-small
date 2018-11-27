@@ -1,0 +1,18 @@
+<!--pages/index/index.wxml-->
+<demo-block>
+  <van-cell-group>
+    <van-field class="textin" value="{{ value }}" placeholder="请输入学员姓名(昵称)" border="{{ false }}" clearable/>
+    <van-field class="textin" value="{{ value }}" placeholder="请输入学员年龄" border="{{ false }}" clearable />
+  </van-cell-group>
+  <van-radio-group
+    value="{{ radio1 }}"
+    data-key="radio1"
+    custom-class="demo-radio-group"
+    bind:change="onChange"
+  >
+    <van-radio name="1" custom-class="demo-radio" class="inline" checked='checked'>男</van-radio>
+    <van-radio name="2" custom-class="demo-radio" class="inline">女</van-radio>
+  </van-radio-group>
+  <image src='/image/timg.jpeg'></image>
+  <button type="primary" bindtap='logBtn'>确认</button>
+</demo-block>

@@ -1,11 +1,21 @@
-// pages/deployFunctions/deployFunctions.js
+import Page from '../../common/page';
+// pages/index/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    radio1: '1'
+  },
 
+  /**
+   * 页面跳转
+   */
+  logBtn: function (options){
+    wx.navigateTo({
+      url: '../button/index',
+    })
   },
 
   /**

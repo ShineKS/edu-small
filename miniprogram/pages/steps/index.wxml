@@ -1,7 +1,31 @@
 <demo-block>
+<van-row>
+ <van-col span="" custom-class="dark">2018年07月01日第一次记录</van-col>
+</van-row>
+<van-row>
+ <view>我的成长</view>
+</van-row>
+<van-row>
+<van-col custom-class="col" span="20" wx:for="{{ icons }}" wx:for-item="icon" wx:key="index">
+    <van-icon custom-class="icon" name="{{ icon }}" size="22px" />
+    <view class="text">{{ clock }}2017年5月24日——2018年8月01日</view>
+  </van-col>
+  </van-row>
+
   <van-row>
-  <image src='/image/touxiang.jpeg'></image>
-    <van-col span="" custom-class="dark">2018年07月01日第一次记录</van-col>
-    <image src='/image/barcode.jpeg'></image>
+    <van-steps
+    steps="{{ steps }}"
+    direction="vertical"
+    active-color="#f44"
+  />
+  </van-row>
+  <van-row>
+  <van-tabbar active="{{ active2 }}" custom-class="tabbar" bind:change="onChange">
+  <van-tabbar-item icon="records">日记</van-tabbar-item>
+  <view>
+  <icon class="iconfont icon-erweima"></icon>
+  </view>
+    <van-tabbar-item icon="contact" bindtap="jumpBtn">我的</van-tabbar-item>
+  </van-tabbar>
   </van-row>
 </demo-block>

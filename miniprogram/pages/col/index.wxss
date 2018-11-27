@@ -1,0 +1,9 @@
+.green {
+  background-color: greenyellow;
+  color: white;
+  font-size: 13px;
+  line-height: 120px;
+  text-align: left;
+  margin-bottom: 10px;
+  background-clip: content-box;
+}
