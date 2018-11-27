@@ -23,7 +23,10 @@ Page({
   },
   //用户授权登录后的回调函数
   authCallback: function(data) {
-   lgoinApp()
+   //lgoinApp()
+    wx.switchTab({
+      url: '/pages/index/index'
+    })
   }
 })
 //执行小程序的登录逻辑
