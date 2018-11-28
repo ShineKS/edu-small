@@ -7,7 +7,9 @@
     "pages/steps/index",
     "pages/col/index",
     "pages/student-create/index",
-    "pages/temp/index"
+    "pages/temp/index",
+    "pages/home/index/index",
+    "pages/home/myInfo/myInfo"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -20,11 +22,11 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/home/index/index",
         "text": "日记"
       },
       {
-        "pagePath": "pages/temp/index",
+        "pagePath": "pages/home/myInfo/myInfo",
         "text": "我的"
       }
     ]

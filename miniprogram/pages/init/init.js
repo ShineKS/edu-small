@@ -1,18 +1,6 @@
 Page({
-  //该页面是初始化页面,用于判断登录状态
+  //该页面是初始化页面,用于授权登录
   onLoad: function () {
-    /*定义微信全局的权限请求,session为家长端的访问控制 token是机构端的访问控制
-     在登录小程序时初始化session,在机构登录时初始化token
-   */
-    wx.Global = {
-      domain: "http://127.0.0.1:8080",
-      user: "",
-      header: {
-        'content-type': 'application/json;charset=UTF-8',
-        'token': '',
-        'session': ''
-      }
-    }
     // 获取用户信息
     wx.getSetting({
       success: res => {
